@@ -1,0 +1,1103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suwannaphum:wght@100;300;400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header */
+.header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(20, 19, 19);
+}
+.logo{
+    width: 15%;
+    height: 100%;
+    padding: 15px;
+    /* background-color: aqua; */
+}
+.logo img{
+    width: 130px;
+    height: 130px;
+    margin-left: 10px;
+}
+.img-logo{
+    width: 75%;
+    height: 100%;
+    padding: 10px;
+    /* background-color: aliceblue; */
+}
+.img-logo img{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    width: 100%;
+    height: 60px; 
+    background-color: #fa1939;
+    /* margin-right: 900px; */
+}
+.sub-menu{
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    /* margin-left: 20px; */
+    overflow: hidden;
+    align-items: center;
+}
+.sub-menu ul{
+    list-style-type: none;
+}
+.sub-menu ul li{
+    display: inline-block;
+}
+.sub-menu ul li a{
+    text-decoration: none;
+    padding: 30px; 
+    color: rgba(255,255,255,.8);
+    font-size: 20px;
+}
+.sub-menu ul li a i{
+    color: rgba(255,255,255,.8);
+}
+.sub-menu ul li a:hover:not(.home){
+    color: white;
+}
+.home{
+    background-color: rgba(0,0,0.50,0.30);
+}
+.sub-menu ul li a:focus{
+    background-color: #ca1e38;
+}
+/* Main1 */
+.main1{
+    width: 97%;
+    height: 600px;
+    /* background-color: aqua; */
+    margin-left: 110px;
+}
+.sub-main1{
+    width: 80%;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 87px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+.main1-left{
+    width: 72.5%;
+    height: 100%;
+    display: flex;
+    /* background-color: blueviolet; */
+}
+.m1-l-left{
+    width: 60%;
+    height: 100%;
+    /* background-color: chartreuse; */
+}
+.m1-l-right{
+    width: 40%;
+    height: 100%;
+    /* background-color: chocolate; */
+}
+.m1-l-l-top,.m1-l-l-bot,.m1-l-r-top,.m1-l-r-bot{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.m1-l-l-top img,.m1-l-l-bot img,.m1-l-r-top img,.m1-l-r-bot img{
+    width: 100%;
+    height: 100%;
+    object-fit   : cover;
+}
+.m1-l-l-top a{
+    width: 100%;
+}
+.main-box,.main-box2,.main-box3,.main-box4{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.box1 span,.box2 span,.box3 span,.box4 span{
+    width:70px;
+    height: 30px;
+    position: absolute;
+    bottom: 85%;
+    background-color: aquamarine;
+    padding-left: 10px;
+    padding-top: 3px;
+    color: black;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    clip-path: polygon(0 0, 78% 0, 93% 99%, 0% 100%);
+}
+.box2 span{
+    bottom: 85%;
+    width: 110px;
+    background-color: chartreuse;
+}
+.box3 span{
+    width: 80px;
+    background-color: lawngreen;
+}
+.box4 span{
+    bottom: 85%;  
+    width: 140px;
+    background-color: greenyellow;
+}
+.box1,.box2,.box3,.box4{
+    width: 100%;
+    /* height: 10%; */
+    /* position: absolute   ; */
+}
+.m1-l-l-top :hover .box1,.m1-l-l-bot :hover .box2,.m1-l-r-top:hover .box3,.m1-l-r-bot:hover .box4{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1; 
+    bottom: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.367), rgba(0, 0, 0, 0.304), rgba(0, 0, 0, 0.300), black 150%);
+    /* background: linear-gradient(rgba(0,0,0,0.267),rgba(0,0,0,0.274),rgba(0,0,0,0.300), black 100%); */
+}
+.box-info1,.box-info2,.box-info3 ,.box-info4{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    /* background-color: aqua; */
+    bottom: 40px;
+    overflow: hidden;
+    transition: all 0.5s;
+    color: white;
+    padding-left: 10px;
+    font-family: "Suwannaphum", serif;
+}
+.m1-l-left :hover h3,.m1-l-right:hover h3{
+    color: rgb(241, 49, 49);
+}
+.m1-l-l-top:hover .box-info1,.m1-l-l-bot :hover .box-info2 ,.m1-l-r-top:hover .box-info3,.m1-l-r-bot:hover .box-info4{
+    transform: all 0.5s;
+    height: 160px;
+    
+}
+.box-time1,.box-time2,.box-time3,.box-time4{
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    bottom: 7px;
+    padding: 5px;
+    color: rgb(251, 251, 251);
+    font-family: "Suwannaphum", serif;
+}
+.main1-right{
+    width: 27%;
+    height: 100%;
+    /* background-color: blanchedalmond; */
+}
+.ads-top,.ads-bot{
+    width: 100%;
+    height: 49.5%;
+}
+.ads-bot{
+    margin-top: 5px;
+}
+.ads-top img,.ads-bot img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* End Main1 */
+/* Main2 */
+.clip-path-main2{
+    width: 80%;
+    height: 55px;
+    margin-left: 188px;
+    /* background-color: blue; */
+}
+.boxclip2{
+    width: 100%;
+    height: 55px;
+    margin-top: 20px;
+    /* background-color: red; */
+}
+.clipping2{
+    width: 130px;
+    height: 50px;
+    background-color: #fa1939;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    clip-path: polygon(0 0, 79% 0,100% 100%,0% 120%);
+}
+.sub-clipping2{
+    width: 100%;
+    height: 5px;
+    /* margin-bottom: 2 px; */
+    background-color: #fa1939;
+}
+.main2 {
+    width: 100%;
+    height: 700px;
+    /* margin-top: 20px; */
+    /* background-color: red; */
+    margin-left: 100px;
+}
+.sub-main2{
+    width: 80%;
+    height: 100%;
+    margin-left: 87px;
+    box-shadow: 5px 5px 5px grey;
+    /* background-color: blue; */
+}
+.sub-main2-top{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-evenly;
+    /* background-color: aqua; */
+}
+.sub-main2-bot{
+    width: 70%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 44px;
+    padding: 5px;
+    /* background-color : brown; */
+}
+.sub-m2-t-left,.sub-m2-t-mid,.sub-m2-t-right{
+    width: 30%;
+    height: 100%;
+    /* background-color: blueviolet; */
+}
+.sub-m2-b-box1,.sub-m2-b-box2,.sub-m2-b-box3,.sub-m2-b-box4{
+    width: 23%;
+    height: 100%;
+    /* background-color : aquamarine; */
+}
+.sub-m2-b-box1-top,.sub-m2-b-box1-bot,.sub-m2-b-box2-top,.sub-m2-b-box2-bot,.sub-m2-b-box3-top,.sub-m2-b-box3-bot,.sub-m2-b-box4-top,.sub-m2-b-box4-bot{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 1px;
+}
+.sub-m2-t-left-top,.sub-m2-t-mid-top,.sub-m2-t-right-top{
+    height: 75%;
+    width: 100%;
+    background-color: black;
+}
+.sub-m2-t-left-top img,.sub-m2-t-mid-top img,.sub-m2-t-right-top img{
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+    padding: 2px 0px ;
+    transition: all 0.5s;
+}
+.sub-m2-t-left-bot,.sub-m2-t-mid-bot,.sub-m2-t-right-bot{
+    height: 25%;
+    /* background-color: aqua; */
+    padding: 5px;
+    font-family: "Suwannaphum", serif; 
+}
+.sub-m2-t-left-top:hover,.sub-m2-t-mid-top:hover,.sub-m2-t-right-top:hover{
+    transform: scale(0.95);
+    padding: 2px 0px;
+    /* background-color: black;     */
+
+}
+.sub-m2-b-box1-top-t,.sub-m2-b-box1-bot-t,.sub-m2-b-box2-top-t,.sub-m2-b-box2-bot-t{
+    height: 75%;
+    background-color: black
+}
+.sub-m2-b-box3-top-t,.sub-m2-b-box3-bot-t,.sub-m2-b-box4-top-t,.sub-m2-b-box4-bot-t{
+    height: 75%;
+    background-color: black ;
+}
+.sub-m2-b-box1-top-t img,.sub-m2-b-box1-bot-t img,.sub-m2-b-box2-top-t img,.sub-m2-b-box2-bot-t img{
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+    padding: 2px 0px;
+    transition: all 0.1s;
+}
+.sub-m2-b-box3-top-t img,.sub-m2-b-box3-bot-t img,.sub-m2-b-box4-top-t img,.sub-m2-b-box4-bot-t img{
+    width: 100%;
+    height: 99%;
+    padding: 2px 0px ;
+    object-fit: cover;
+}
+.sub-m2-b-box1-top-b,.sub-m2-b-box1-bot-b,.sub-m2-b-box2-top-b,.sub-m2-b-box2-bot-b{
+    height: 25%;
+    /* background-color: aqua; */
+    padding: 2px;
+    font-size: 15px;
+    font-family: "Suwannaphum", serif; 
+}
+.sub-m2-b-box3-top-b,.sub-m2-b-box3-bot-b,.sub-m2-b-box4-top-b,.sub-m2-b-box4-bot-b{
+    height: 25%;
+    /* background-color: aqua; */
+    padding: 5px;
+    font-size: 14px;
+    font-family: "Suwannaphum", serif; 
+}
+.sub-m2-b-box1-top-t:hover,.sub-m2-b-box1-bot-t:hover,.sub-m2-b-box2-top-t:hover,.sub-m2-b-box2-bot-t:hover{
+    transform: scale(0.95);
+    padding: 2px 0px ;
+}
+.sub-m2-b-box3-top-t:hover,.sub-m2-b-box3-bot-t:hover,.sub-m2-b-box4-top-t:hover,.sub-m2-b-box4-bot-t:hover{
+    transform: scale(0.95);
+    padding: 2px 0px ;
+}
+/* End Main2 */
+/* Main3 */
+.clip-path-main3{
+    width: 80%;
+    height: 55px;
+    margin-left: 188px;
+    /* background-color: blue; */
+}
+.boxclip3{
+    width: 100%;
+    height: 55px;
+    margin-top: 20px;
+    /* background-color: red; */
+}
+.clipping3{
+    width: 130px;
+    height: 55px;
+    background-color: rgb(238, 108, 130);
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    clip-path: polygon(0 0, 79% 0,100% 100%,0% 120%);
+    margin-top: 10px;
+}
+.sub-clipping3{
+    width: 100%;
+    height: 5px;
+    margin-bottom: 50px;
+    background-color: rgb(238, 108, 130);
+}
+.main3{
+    width: 100%;
+    height: 370px;
+    margin-left: 100px;
+    /* background-color: blue; */
+}
+.sub-main3{
+    width: 80%;
+    height: 100%;
+    margin-left: 87px;
+    box-shadow: 5px 5px 5px grey;
+    /* background-color: black; */
+    display: flex;
+    padding: 10px 20px;
+}
+.sub-main3-left{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    /* background-color: #fa1939; */
+}
+.sub-main3-left-img{
+    /* width: 100%; */
+    height: 60%;
+   
+}
+.sub-main3-left-img img{
+    width: 100%;
+    height: 99%;
+    padding: 3px 0px;
+    object-fit: cover;
+    transition: all 0.1s;
+}
+.sub-main3-left-img:hover{
+    transform: scale(0.95);
+    padding: 2px 0px;
+}
+.sub-main3-left-info{
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    font-family: "Suwannaphum", serif;
+    font-size: 23px;
+    color: white;
+    background-color: rgb(238, 108, 130);
+}
+.sub-main3-right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-evenly;
+}
+.sub-main3-right-b1,.sub-main3-right-b2,.sub-main3-right-b3,.sub-main3-right-b4{
+    width: 24%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.sub-main3-right-b1-t,.sub-main3-right-b1-b,.sub-main3-right-b2-t,.sub-main3-right-b2-b{
+    width: 100%;
+    height: 50%;
+}
+.sub-main3-right-b3-t,.sub-main3-right-b3-b,.sub-main3-right-b4-t,.sub-main3-right-b4-b{
+    width: 100%;
+    height: 50%;
+    /* margin-top: 1px; */
+    /* background-color: #fa1939; */
+}
+.sub-main3-right-b1-t-img,.sub-main3-right-b1-b-img,.sub-main3-right-b2-t-img,.sub-main3-right-b2-b-img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.sub-main3-right-b3-t-img,.sub-main3-right-b3-b-img,.sub-main3-right-b4-t-img,.sub-main3-right-b4-b-img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.sub-main3-right-b1-t-img img,.sub-main3-right-b1-b-img img,.sub-main3-right-b2-t-img img,.sub-main3-right-b2-b-img img{
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+    padding: 3px 0px;
+    background-color: black;
+    transition: all 0.1s;
+}
+.sub-main3-right-b1-t-img:hover,.sub-main3-right-b1-b-img:hover,.sub-main3-right-b2-t-img:hover,.sub-main3-right-b2-b-img:hover{
+    transform: scale(0.95);
+    padding: 2px 0px;
+}
+.sub-main3-right-b3-t-img img,.sub-main3-right-b3-b-img img,.sub-main3-right-b4-t-img img,.sub-main3-right-b4-b-img img{
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+    padding: 3px 0px;
+    background-color: black;
+    transition: all 0.1s;
+}
+.sub-main3-right-b3-t-img:hover,.sub-main3-right-b3-b-img:hover,.sub-main3-right-b4-t-img:hover,.sub-main3-right-b4-b-img:hover{
+    transform: scale(0.95);
+    padding: 2px 0px;
+}
+.sub-main3-right-b1-t-info,.sub-main3-right-b1-b-info,.sub-main3-right-b2-t-info,.sub-main3-right-b2-b-info{
+    width: 100%;
+    height: 40%;
+    padding: 1px;
+    font-family: "Suwannaphum", serif;
+    font-size: 15px;
+}
+.sub-main3-right-b3-t-info,.sub-main3-right-b3-b-info,.sub-main3-right-b4-t-info,.sub-main3-right-b4-b-info{
+    width: 100%;
+    height: 40%;
+    padding: 1px;
+    font-family: "Suwannaphum", serif;
+    font-size: 15px;
+}
+/* End Main3 */
+/* Main5 */
+.clip-path-main5{
+    width: 80%;
+    height: 55px;
+    margin-left: 188px;
+    margin-top: 20px;
+    /* background-color: blue; */
+}
+.boxclip5{
+    width: 100%;
+    height: 55px;
+    margin-top: 20px;
+    /* background-color: red; */
+}
+.clipping5{
+    width: 180px;
+    height: 55px;
+    background-color: rgb(42, 204, 42);
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    clip-path: polygon(0 0, 79% 0,100% 100%,0% 120%);
+    margin-top: 10px;
+}
+.sub-clipping5{
+    width: 100%;
+    height: 5px;
+    margin-bottom: 50px;
+    background-color: rgb(42, 204, 42);
+}
+.main5{
+    width: 100%;
+    height: 370px;
+    margin-left: 100px;
+    /* margin-top: 20px; */
+    /* background-color: blue; */
+}
+.sub-main5{
+    width: 80%;
+    height: 100%;
+    margin-left: 87px;
+    box-shadow: 5px 5px 5px grey;
+    /* background-color: black; */
+    display: flex;
+    padding: 10px 20px;
+}
+.sub-main5-left{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    /* background-color: #fa1939; */
+}
+.sub-main5-left-img{
+    /* width: 100%; */
+    height: 60%;
+   
+}
+.sub-main5-left-img img{
+    width: 100%;
+    height: 99%;
+    padding: 3px 0px;
+    object-fit: cover;
+    transition: all 0.1s;
+}
+.sub-main5-left-img:hover{
+    transform: scale(0.95);
+    padding: 2px 0px;
+}
+.sub-main5-left-info{
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    font-family: "Suwannaphum", serif;
+    font-size: 22px;
+    color: white;
+    background-color:rgb(42, 204, 42);
+}
+.sub-main5-right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-evenly;
+}
+.sub-main5-right-b1,.sub-main5-right-b2,.sub-main5-right-b3,.sub-main5-right-b4{
+    width: 24%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.sub-main5-right-b1-t,.sub-main5-right-b1-b,.sub-main5-right-b2-t,.sub-main5-right-b2-b{
+    width: 100%;
+    height: 50%;
+}
+.sub-main5-right-b3-t,.sub-main5-right-b3-b,.sub-main5-right-b4-t,.sub-main5-right-b4-b{
+    width: 100%;
+    height: 50%;
+    /* margin-top: 1px; */
+    /* background-color: #fa1939; */
+}
+.sub-main5-right-b1-t-img,.sub-main5-right-b1-b-img,.sub-main5-right-b2-t-img,.sub-main5-right-b2-b-img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.sub-main5-right-b3-t-img,.sub-main5-right-b3-b-img,.sub-main5-right-b4-t-img,.sub-main5-right-b4-b-img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.sub-main5-right-b1-t-img img,.sub-main5-right-b1-b-img img,.sub-main5-right-b2-t-img img,.sub-main5-right-b2-b-img img{
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+    padding: 3px 0px;
+    background-color: black;
+    transition: all 0.1s;
+}
+.sub-main5-right-b1-t-img:hover,.sub-main5-right-b1-b-img:hover,.sub-main5-right-b2-t-img:hover,.sub-main5-right-b2-b-img:hover{
+    transform: scale(0.95);
+    padding: 2px 0px;
+}
+.sub-main5-right-b3-t-img img,.sub-main5-right-b3-b-img img,.sub-main5-right-b4-t-img img,.sub-main5-right-b4-b-img img{
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+    padding: 3px 0px;
+    background-color: black;
+    transition: all 0.1s;
+}
+.sub-main5-right-b3-t-img:hover,.sub-main5-right-b3-b-img:hover,.sub-main5-right-b4-t-img:hover,.sub-main5-right-b4-b-img:hover{
+    transform: scale(0.95);
+    padding: 2px 0px;
+}
+.sub-main5-right-b1-t-info,.sub-main5-right-b1-b-info,.sub-main5-right-b2-t-info,.sub-main5-right-b2-b-info{
+    width: 100%;
+    height: 40%;
+    padding: 1px;
+    font-family: "Suwannaphum", serif;
+    font-size: 15px;
+}
+.sub-main5-right-b3-t-info,.sub-main5-right-b3-b-info,.sub-main5-right-b4-t-info,.sub-main5-right-b4-b-info{
+    width: 100%;
+    height: 40%;
+    padding: 1px;
+    font-family: "Suwannaphum", serif;
+    font-size: 15px;
+}
+/* End Main5 */
+/* Main4 */
+.clip-path-main4{
+    width: 80%;
+    height: 55px;
+    margin-left: 188px;
+    margin-top: 20px;
+    /* background-color: blue; */
+}
+.boxclip4{
+    width: 100%;
+    height: 55px;
+    margin-top: 20px;
+    /* background-color: red; */
+}
+.clipping4{
+    width: 150px;
+    height: 55px;
+    background-color: rgb(106, 197, 247);
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    clip-path: polygon(0 0, 79% 0,100% 100%,0% 120%);
+    margin-top: 10px;
+}
+.sub-clipping4{
+    width: 100%;
+    height: 5px;
+    margin-bottom: 50px;
+    background-color: rgb(106, 197, 247);
+}
+.main4{
+    width: 100%;
+    height: 370px;
+    margin-left: 100px;
+    /* margin-top: 20px; */
+    /* background-color: blue; */
+}
+.sub-main4{
+    width: 80%;
+    height: 100%;
+    margin-left: 87px;
+    box-shadow: 5px 5px 5px grey;
+    /* background-color: black; */
+    display: flex;
+    padding: 10px 20px;
+}
+.sub-main4-left{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    /* background-color: #fa1939; */
+}
+.sub-main4-left-img{
+    /* width: 100%; */
+    height: 60%;
+   
+}
+.sub-main4-left-img img{
+    width: 100%;
+    height: 99%;
+    padding: 3px 0px;
+    object-fit: cover;
+    transition: all 0.1s;
+}
+.sub-main4-left-img:hover{
+    transform: scale(0.95);
+    padding: 2px 0px;
+}
+.sub-main4-left-info{
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    font-family: "Suwannaphum", serif;
+    font-size: 22px;
+    color: white;
+    background-color: rgb(106, 197, 247) ;
+}
+.sub-main4-right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-evenly;
+}
+.sub-main4-right-b1,.sub-main4-right-b2,.sub-main4-right-b3,.sub-main4-right-b4{
+    width: 24%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.sub-main4-right-b1-t,.sub-main4-right-b1-b,.sub-main4-right-b2-t,.sub-main4-right-b2-b{
+    width: 100%;
+    height: 50%;
+}
+.sub-main4-right-b3-t,.sub-main4-right-b3-b,.sub-main4-right-b4-t,.sub-main4-right-b4-b{
+    width: 100%;
+    height: 50%;
+    /* margin-top: 1px; */
+    /* background-color: #fa1939; */
+}
+.sub-main4-right-b1-t-img,.sub-main4-right-b1-b-img,.sub-main4-right-b2-t-img,.sub-main4-right-b2-b-img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.sub-main4-right-b3-t-img,.sub-main4-right-b3-b-img,.sub-main4-right-b4-t-img,.sub-main4-right-b4-b-img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.sub-main4-right-b1-t-img img,.sub-main4-right-b1-b-img img,.sub-main4-right-b2-t-img img,.sub-main4-right-b2-b-img img{
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+    padding: 3px 0px;
+    background-color: black;
+    transition: all 0.1s;
+}
+.sub-main4-right-b1-t-img:hover,.sub-main4-right-b1-b-img:hover,.sub-main4-right-b2-t-img:hover,.sub-main4-right-b2-b-img:hover{
+    transform: scale(0.95);
+    padding: 2px 0px;
+}
+.sub-main4-right-b3-t-img img,.sub-main4-right-b3-b-img img,.sub-main4-right-b4-t-img img,.sub-main4-right-b4-b-img img{
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+    padding: 3px 0px;
+    background-color: black;
+    transition: all 0.1s;
+}
+.sub-main4-right-b3-t-img:hover,.sub-main4-right-b3-b-img:hover,.sub-main4-right-b4-t-img:hover,.sub-main4-right-b4-b-img:hover{
+    transform: scale(0.95);
+    padding: 2px 0px;
+}
+.sub-main4-right-b1-t-info,.sub-main4-right-b1-b-info,.sub-main4-right-b2-t-info,.sub-main4-right-b2-b-info{
+    width: 100%;
+    height: 40%;
+    padding: 1px;
+    font-family: "Suwannaphum", serif;
+    font-size: 15px;
+}
+.sub-main4-right-b3-t-info,.sub-main4-right-b3-b-info,.sub-main4-right-b4-t-info,.sub-main4-right-b4-b-info{
+    width: 100%;
+    height: 40%;
+    padding: 1px;
+    font-family: "Suwannaphum", serif;
+    font-size: 15px;
+}
+/* End Main4 */
+/* Main6 */
+.clip-path-main6{
+    width: 80%;
+    height: 55px;
+    margin-left: 188px;
+    margin-top: 20px;
+    /* background-color: blue; */
+}
+.boxclip6{
+    width: 100%;
+    height: 55px;
+    margin-top: 20px;
+    /* background-color: red; */
+}
+.clipping6{
+    width: 120px;
+    height: 55px;
+    background-color: rgb(245, 167, 24);
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    clip-path: polygon(0 0, 79% 0,100% 100%,0% 120%);
+    margin-top: 10px;
+}
+.sub-clipping6{
+    width: 100%;
+    height: 5px;
+    margin-bottom: 50px;
+    background-color: rgb(245, 167, 24);
+}
+.main6{
+    width: 100%;
+    height: 370px;
+    margin-left: 100px;
+    /* margin-top: 20px; */
+    /* background-color: blue; */
+}
+.sub-main6{
+    width: 80%;
+    height: 100%;
+    margin-left: 87px;
+    box-shadow: 5px 5px 5px grey;
+    /* background-color: black; */
+    display: flex;
+    padding: 10px 20px;
+}
+.sub-main6-left{
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    /* background-color: #fa1939; */
+}
+.sub-main6-left-img{
+    /* width: 100%; */
+    height: 60%;
+   
+}
+.sub-main6-left-img img{
+    width: 100%;
+    height: 99%;
+    padding: 3px 0px;
+    object-fit: cover;
+    transition: all 0.1s;
+}
+.sub-main6-left-img:hover{
+    transform: scale(0.95);
+    padding: 2px 0px;
+}
+.sub-main6-left-info{
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    font-family: "Suwannaphum", serif;
+    font-size: 22px;
+    color: white;
+    background-color: rgb(245, 167, 24);
+}
+.sub-main6-right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: space-evenly;
+}
+.sub-main6-right-b1,.sub-main6-right-b2,.sub-main6-right-b3,.sub-main6-right-b4{
+    width: 24%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.sub-main6-right-b1-t,.sub-main6-right-b1-b,.sub-main6-right-b2-t,.sub-main6-right-b2-b{
+    width: 100%;
+    height: 50%;
+}
+.sub-main6-right-b3-t,.sub-main6-right-b3-b,.sub-main6-right-b4-t,.sub-main6-right-b4-b{
+    width: 100%;
+    height: 50%;
+    /* margin-top: 1px; */
+    /* background-color: #fa1939; */
+}
+.sub-main6-right-b1-t-img,.sub-main6-right-b1-b-img,.sub-main6-right-b2-t-img,.sub-main6-right-b2-b-img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.sub-main6-right-b3-t-img,.sub-main6-right-b3-b-img,.sub-main6-right-b4-t-img,.sub-main6-right-b4-b-img{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+}
+.sub-main6-right-b1-t-img img,.sub-main6-right-b1-b-img img,.sub-main6-right-b2-t-img img,.sub-main6-right-b2-b-img img{
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+    padding: 3px 0px;
+    background-color: black;
+    transition: all 0.1s;
+}
+.sub-main6-right-b1-t-img:hover,.sub-main6-right-b1-b-img:hover,.sub-main6-right-b2-t-img:hover,.sub-main6-right-b2-b-img:hover{
+    transform: scale(0.95);
+    padding: 2px 0px;
+}
+.sub-main6-right-b3-t-img img,.sub-main6-right-b3-b-img img,.sub-main6-right-b4-t-img img,.sub-main6-right-b4-b-img img{
+    width: 100%;
+    height: 99%;
+    object-fit: cover;
+    padding: 3px 0px;
+    background-color: black;
+    transition: all 0.1s;
+}
+.sub-main6-right-b3-t-img:hover,.sub-main6-right-b3-b-img:hover,.sub-main6-right-b4-t-img:hover,.sub-main6-right-b4-b-img:hover{
+    transform: scale(0.95);
+    padding: 2px 0px;
+}
+.sub-main6-right-b1-t-info,.sub-main6-right-b1-b-info,.sub-main6-right-b2-t-info,.sub-main6-right-b2-b-info{
+    width: 100%;
+    height: 40%;
+    padding: 1px;
+    font-family: "Suwannaphum", serif;
+    font-size: 15px;
+}
+.sub-main6-right-b3-t-info,.sub-main6-right-b3-b-info,.sub-main6-right-b4-t-info,.sub-main6-right-b4-b-info{
+    width: 100%;
+    height: 40%;
+    padding: 1px;
+    font-family: "Suwannaphum", serif;
+    font-size: 15px;
+}
+/* End Main6 */
+/* Footer */
+.footer{
+    width: 100%;
+    height: 320px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.f-left{
+    width: 23%;
+    height: 100%;
+    margin-left: 150px;
+    /* background-color: aliceblue; */
+}
+.image{
+    width: 100%;
+    height: 40%;
+    /* background-color: #fa1939 */
+}
+.image img{
+    margin-top: 40px;
+    width: 180px;
+    height: 80px;
+}
+.text{
+    width: 100%;
+    height:60%;
+    /* background-color: aliceblue; */
+}
+.a{
+    font-family: "Noto Sans Khmer", sans-serif;
+    font-size: 17px;
+    color: #999;
+}
+.b{
+    margin-top: 10px;
+    color: #999;
+    font-family: "Noto Sans Khmer", sans-serif;
+    font-size: 17px;
+}
+.b:hover{
+    color: white;
+}
+.c{
+    margin-top: 10px;
+    color: aliceblue;
+    font-size: 17px;
+    font-family: "Noto Sans Khmer", sans-serif;
+}
+.d{
+    color: #999;
+    font-size: 17px;
+    font-family: "Noto Sans Khmer", sans-serif;
+}
+.e{
+    color: #999;
+    font-size: 17px;
+    font-family: "Noto Sans Khmer", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@100..900&display=swap');
+.f-mid{
+    width: 36%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+}
+.text2{
+    width: 100%;
+    height: 60%;
+    /* background-color: aqua; */
+    padding: 10px;
+}
+.f{
+    color: #999;
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: "Noto Sans Khmer", sans-serif; 
+}
+.g{
+    color: #999;
+    margin-top: 15px;
+    font-size: 17px;
+    font-family: "Noto Sans Khmer", sans-serif;  
+}
+.h{
+    color: #999;
+    font-size: 17px;
+    font-family: "Noto Sans Khmer", sans-serif; 
+}
+.i{
+    color: #999;
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: "Noto Sans Khmer", sans-serif; 
+}
+.image2{
+    width: 100%;
+    height: 40%;
+}
+.image2 img{
+    width: 40px;
+    height: 40px;
+}
+.imgg-logo{
+    border-radius: 50%;
+}
+
+.f-right{
+    width: 30%;
+    height: 100%;
+    /* background-color: #fa1939; */
+}
+.text3,.image3{
+    width: 100%;
+    height: 25%;
+    /* background-color: aqua; */
+}
+.text4{
+    width: 100%;
+    height: 50%;
+    /* background-color: blue; */
+}
+.j{
+    color: #999;
+    justify-content: left;
+    align-items: end;
+    display: flex;
+    font-size: 25px;
+    padding: 40px 0px;
+    font-family: "Noto Sans Khmer", sans-serif; 
+}
+.k{
+    color: #999;
+    font-size: 17px;
+    margin-top: 5px;
+    font-family: "Noto Sans Khmer", sans-serif;
+}
+.l,.m{
+    color: #999;
+    font-size: 15px;
+    font-family: "Noto Sans Khmer", sans-serif; 
+}
+.l:hover{
+    color: white;
+}
+.n{
+    width: 100%;
+    height: 100%;
+    padding: 20px 5px;
+    background-color: black;
+}
+.image3 .n .fa-brands:hover{
+    color: #fa1939;
+}
